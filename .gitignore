@@ -1,11 +1,19 @@
+20150531/
 _other/
 src/*
+openlayers/
 map.fosm.org - earth map - Full Screen_files/*
 *~
+dns.txt
+
+
 
 jsf/ol3-layerswitcher.js
 jsf/unverse10.02.js
 jsf/bootstrap.min.js
+jsf/_old/
+jsf/other/
+
 
 css/bootstrap.min.css
 css/ol3-layerswitcher.css

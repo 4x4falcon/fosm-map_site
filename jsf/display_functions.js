@@ -1,50 +1,24 @@
-function setDisplay() {
+//window.onresize = setMapHeight;
 
-	setPosition();
-	setHeight();
-	setWidth();
-	updateHash();
-}
+/* put functions to be performed on setDisplay call here */
 
-function setPosition(left, top) {
-	if (typeof(left)==='undefined') left = 0;
-	if (typeof(top)==='undefined') top = 50;
+function setDisplay()
+  {
+   setMapHeight();
+   setMapWidth();
+  }
 
-	$('#map').left = left;
-	$('#map').top = top;
-}
+/* set the height of the map div, takes into account height of cssmenu div */
 
-function setHeight() {
+function setMapHeight()
+  {
+   var iH = window.innerHeight - document.getElementById("cssmenu").offsetHeight;
 
-}
+   document.getElementById("map").style.height = iH+"px";
+  }
 
-function setWidth() {
+/* set the width of the map div, not used as at 3 May 2013 */
 
-	var width = $('body').width() - 20;
-
-	$('#map').width(width);
-}
-
-/*
- *  Hash functions
- */
-
-// the current hash can be modified by setCookie and update hash
-// format is #map/zoom/lat/lon
-
-var currentHash = "";
-
-function getHash() {
-
-	return location.hash.replace('#map/', '');
-
-}
-
-
-function updateHash() {
-
-
-
-}
-
-
+function setMapWidth()
+  {
+  }

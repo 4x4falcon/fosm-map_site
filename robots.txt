@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /browse/
+User-agent: Googlebot-Image
+Disallow: /
+Disallow: /default/
+
