@@ -1,9 +1,11 @@
+_other/
 src/*
 map.fosm.org - earth map - Full Screen_files/*
 *~
 
 jsf/ol3-layerswitcher.js
 jsf/unverse10.02.js
+jsf/bootstrap.min.js
 
 css/bootstrap.min.css
 css/ol3-layerswitcher.css

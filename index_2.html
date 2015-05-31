@@ -5,15 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
 
+<link rel="stylesheet" href="http://openlayers.org/en/v3.5.0/css/ol.css" type="text/css">
 <link rel="stylesheet" href="css/ol3-layerswitcher.css">
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-<!--<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css"> -->
 
 <link rel="stylesheet" href="css/search.css" type="text/css">
 <link rel="stylesheet" href="css/layout.css" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!--<script src="jsf/jquery.min.js"></script>-->
+<script src="jsf/bootstrap.min.js"></script>
 
     <style>
       .map:-moz-full-screen {
@@ -41,7 +42,7 @@
 
   <div id="header">
       <img id="logo-image" src="images/fosm.png">
-  </div>
+<!--  </div>  -->
 
   <div id="cssmenu">
   <ul>
@@ -81,30 +82,27 @@
     </li>
 
   </ul>
+  </div>   <!-- menu -->
   </div>
-
-
-    <div class="container-fluid">
-
-      <div class="row-fluid">
-        <div class="span12">
-          <div id="map" class="map" onload="setDisplay();"></div>
-        </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+        <div id="map" class="map" onload="setDisplay();"></div>
       </div>
+    </div>
 
+<!--
       <div class="row-fluid" id="bottom-row">
 
       </div>
-
-    </div>
-
+-->
 
     <div id="about">
      <p class="heading">About this server</p>
-     <p class="about_text">This is a Mapnik, postgresql server of the data available from <a class="about_text" href="https://web.archive.org/web/20150210195323/http://fosm.org/" target="_blank">fosm.org</a></p>
+     <p class="about_text">This is a Mapnik, postgresql server of the data available from <a class="about_text" href="http://fosm.org/" target="_blank">fosm.org</a></p>
      <p class="about_text">The server has AMD 8150 Bulldozer eight core (3.6Ghz), 32 GB ram, 6Tb hdd.</p>
      <p class="about_text">The server is provided by me, if you want more info contact me at info at 4x4falcon dot com</p>
-     <p class="about_text">It is currently (1 May 2012) running Ubuntu 11.04 server, postgresql 8.4, Mapnik 2.0.1, apache 2.2 with mod_tile, plus numerous other tools to render maps.
+     <p class="about_text">It is currently (1 May 2015) running Ubuntu 12.04.5 server, postgresql 8.4, Mapnik 2.2, apache 2.2 with mod_tile, plus numerous other tools to render maps.
      </p><p></p>
     </div>
 
@@ -168,7 +166,12 @@
      </div>
     </div>
 
-    <script src="jsf/ol.js"></script>
+  </div>
+
+  <script src="http://openlayers.org/en/v3.5.0/build/ol.js" type="text/javascript"></script>
+<!--    <script src="jsf/ol.js"></script>  -->
+
+
 <!--
     <script src="jsf/min/ol3-layerswitcher.min.js"></script>
     <script src="jsf/min/cookie.min.js" type="text/javascript"></script>
@@ -180,11 +183,12 @@
     <script src="jsf/min/search.min.js" type="text/javascript"></script>
 -->
 
+
     <script src="jsf/ol3-layerswitcher.js"></script>
+    <script src="jsf/unverse10.02.js" type="text/javascript"></script>
     <script src="jsf/display_functions.js" type="text/javascript"></script>
     <script src="jsf/cookie.js" type="text/javascript"></script>
-    <script src="jsf/full-screen.js" type="text/javascript"></script>
-    <script src="jsf/unverse10.02.js" type="text/javascript"></script>
+    <script src="jsf/main.js" type="text/javascript"></script>
     <script src="jsf/jump_to.js" type="text/javascript"></script>
     <script src="jsf/menu.js" type="text/javascript"></script>
     <script src="jsf/search.js" type="text/javascript"></script>
