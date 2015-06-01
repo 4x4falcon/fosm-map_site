@@ -109,11 +109,11 @@
         position: absolute;
         top: 0px;
         right: 0px;
-	background:url(/images/menu-bg.gif) top left repeat-x;
+	background:url(../images/menu-bg.gif) top left repeat-x;
         width: 100%;
 	}
 #cssmenu ul{
-	background:url(/images/menu-bg.gif) top left repeat-x;
+	background:url(../images/menu-bg.gif) top left repeat-x;
 	height:43px;
 	list-style:none;
 	margin:0;
